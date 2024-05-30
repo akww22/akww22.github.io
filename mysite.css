@@ -1,0 +1,120 @@
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+/* 공통 섹션 스타일 */
+.my-site {
+    padding: 100px 0;
+    transition: all 0.3s ease;
+}
+
+.my-site .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.my-site .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.my-site .title::after {
+    content: "What Is My Site";
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(255, 164, 45);
+    padding: 5px;
+    background-color: white;
+    transform: translateX(-50%);
+}
+
+/* 콘텐츠 영역 스타일 */
+.my-site .my-site-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.my-site .my-site-content .left,
+.my-site .my-site-content .center,
+.my-site .my-site-content .right {
+    width: 32%;
+}
+
+.my-site .my-site-content a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.my-site .my-site-content a,
+.my-site .my-site-content a:visited,
+.my-site .my-site-content a:active,
+.my-site .my-site-content a:hover {
+    text-decoration: none;
+}
+
+.my-site .my-site-content .site {
+    background-color: rgb(240, 236, 236);
+    border-radius: 6px;
+    padding: 25px 35px;
+    transition: all 0.3s ease;
+}
+
+.my-site .my-site-content .site img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 164, 45);
+    transition: all 0.3s ease;
+}
+
+.my-site .my-site-content .site-text {
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.my-site .my-site-content p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.my-site .my-site-content .site:hover {
+    background-color: rgb(25, 8, 53);
+    color: white;
+    transform: scale(1.05);
+}
+
+.my-site .my-site-content .site:hover img {
+    border-color: white;
+}

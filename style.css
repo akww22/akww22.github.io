@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.home .about .skills .my-site .contact {
+    padding-top: 86px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.section {
+    padding: 0;
+}
+
+.about, .skills, .my-site, .contact, footer {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0 100px 0;
+    padding-bottom: 8px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 아래에서부터는 각 섹션별 고유 스타일 */
+
+.about::before,
+.skills::before,
+.my-site::before,
+.contact::before,
+footer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.about::after,
+.skills::after,
+.my-site::after,
+.contact::after,
+footer::after {
+    content: "";
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(255, 164, 45);
+    padding: 5px;
+    background-color: white;
+    transform: translateX(-50%);
+}
