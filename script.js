@@ -12,19 +12,3 @@ $('.menu-btn').click(function(){
     $('.navbar .menubar').toggleClass("active");
     $('.menu-btn i').toggleClass("active"); 
 });
-
-// typing animation
-var typed = new Typed(".typing1", {
-    Strings: ["HTML", "CSS", "Java Script", "JAVA", "Oracle"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
-
-var typed = new Typed(".typing2", {
-    Strings: ["HTML", "CSS", "Java Script", "JAVA", "Oracle"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
-
